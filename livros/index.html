@@ -1,0 +1,68 @@
+<!--Exemplo e exercicios para iniciantes - Livro Logica de Programação e Algoritmo Javascript-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Controle Pessoal de Livros</title>
+</head>
+<body class="container mt-5">
+    <!--barra de navegação-->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <div class="container"> <!--container-->
+            <a class="navbar-brand" href="#">Controle Pessoal de Livros</a>
+            <ul class="navbar-nav"> <!--links do menu de navegação-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inclusão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Manutenção</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resumo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4 class="fst-italic mt-3">Inclusão</h4> <!--Titulo do formulario-->
+    <form> <!--formulario-->
+        
+        <div class="form-group">
+            <label htmlFor="titulo">Titulo: </label> 
+            <input type="text" class="form-control" id="titulo" required autofocus/>
+        </div>
+
+        <div class="form-group mt-2">
+            <label htmlFor="autor">Autor: </label>
+            <input type="text" class="form-control" id="foto" required>
+        </div>
+
+        <div class="form-group mt-2">
+            <label htmlFor="foto">URL da Foto: </label>
+            <input class="form-control" type="url" id="foto" required>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-sm-4">
+            <div class="form-group">
+                <label htmlFor="ano">Ano de Publicação: </label>
+                    <input type="date" class="form-control" id="ano" required>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+            <div class="form-group">
+                <label htmlFor="preco">Preço R$: </label>
+                <input type="number" class="form-control" id="preco" step="0.01" required>
+                
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3" value="Enviar">Enviar</button>
+        <button type="reset" class="btn btn-danger mt-3 ms-3"  value="Limpar">Limpar</button>
+        
+    </form>
+</body>
+</html>
